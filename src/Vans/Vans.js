@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import VanCard from "./vanCards";
+import VanCard from "../Vans/vanCards";
 
 export default function Vans() {
   let [vans, setVans] = useState([]);
@@ -32,14 +32,6 @@ export default function Vans() {
 
   return (
     <div className="vans">
-      <div className="home--nav">
-        <Link to="/">
-          <p>#VANLIFE</p>
-        </Link>
-        <Link to="/vans" className="home--nav--a">
-          <p> Vans</p>
-        </Link>
-      </div>
       <div className="vans--content">
         <p className="vans--content--p">Explore our van options</p>
         <div className="vans--content--btns--container">

@@ -7,7 +7,7 @@ export default function vanCards(prop) {
       <div className="van--card">
         <img className="van--card--image" src={prop.img} />
         <p className="van--card--name">{prop.name}</p>
-        <p className="van--card--price">{prop.price}</p>
+        <p className="van--card--price">{prop.price}/day</p>
       </div>
     </Link>
   );

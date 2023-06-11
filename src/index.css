@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap");
 * {
   text-decoration: none;
   scrollbar-width: none;
@@ -17,7 +18,7 @@ body {
 }
 
 p {
-  font-family: "Inter";
+  font-family: "Noto Sans", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 25.3531px;
@@ -43,6 +44,11 @@ p {
   align-items: center;
 }
 
+.home--nav--links {
+  display: flex;
+  gap: 20px;
+}
+
 .home--content {
   display: flex;
   flex-direction: column;
@@ -52,7 +58,7 @@ p {
   line-height: 42px;
   color: white;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
-    url(image.png);
+    url(./assets/image.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -82,7 +88,7 @@ p {
   background-color: #252525;
   color: #aaaaaa;
   height: 50px;
-  font-family: "Inter";
+  font-family: "Noto Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -176,7 +182,7 @@ Vans Page Code
 
 .van--detail--name {
   align-self: flex-start;
-  font-family: "Inter";
+  font-family: "Noto Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -193,4 +199,33 @@ Vans Page Code
 .van--detail--description {
   max-width: 500px;
   padding: 0px 5px;
+}
+
+/* 
+
+Host Page
+
+*/
+
+.host--nav {
+  display: flex;
+  background-color: #fff7ed;
+  gap: 20px;
+  padding-left: 20px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.host--nav p {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #4d4d4d;
+}
+
+.host--nav p:hover {
+  font-weight: bolder;
+  text-decoration: underline;
 }

@@ -22,14 +22,6 @@ export default function VanDetail() {
 
   return (
     <div>
-      <div className="home--nav">
-        <Link to="/">
-          <p>#VANLIFE</p>
-        </Link>
-        <Link to="/vans" className="home--nav--a">
-          <p> Vans</p>
-        </Link>
-      </div>
       <div className="van--detail--container">
         {van ? (
           <div className="van--detail">
@@ -37,9 +29,7 @@ export default function VanDetail() {
             <div className="van--detail--type">{van.type}</div>
             <div className="van--detail--name">{van.name}</div>
             <div className="van--detail--price">${van.price}/day</div>
-            <div className="van--detail--description">
-              ${van.description}/day
-            </div>
+            <div className="van--detail--description">${van.description}</div>
           </div>
         ) : (
           <p>{apistate === null ? "Loading" : apistate}</p>
