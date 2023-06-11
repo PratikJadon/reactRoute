@@ -19,7 +19,7 @@ export default function VanDetail() {
     };
     getdata();
   }, [params.id]);
-  console.log(apistate);
+
   return (
     <div>
       <div className="home--nav">
