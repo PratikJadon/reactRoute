@@ -229,3 +229,143 @@ Host Page
   font-weight: bolder;
   text-decoration: underline;
 }
+
+.host--vans-background {
+  height: 75%;
+  background-color: #fff7ed;
+  padding-top: 20px;
+}
+
+.host--vans--wrapper {
+  margin: 40px;
+}
+
+.host--vans--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 10px;
+  width: 500px;
+  height: 100px;
+  margin: 0px auto;
+  border-radius: 7px;
+  background-color: white;
+}
+
+.host--vans--image {
+  max-width: 70px;
+  max-height: 70px;
+}
+
+.host--vans--info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.host--vans--info > p,
+.host--vans--info > h3 {
+  margin: 0px;
+  color: black;
+}
+
+.host--vans--btn {
+  border-style: none;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+/* 
+
+
+Host Van Detail Page
+
+
+*/
+
+.host--vandetail {
+  height: 100%;
+  padding: 1px;
+  background-color: #fff7ed;
+}
+
+.host--vandetail--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  width: 50%;
+  margin: 0px auto;
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+
+.host--vandetail--container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 50%;
+  margin: 0px auto;
+}
+
+.host--vandetail--image {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.host--vandetail--info--type {
+  background-color: #ff8c38;
+  width: fit-content;
+  color: #ffead0;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.host--vandetail--info--name {
+  font-weight: bolder;
+}
+
+.host--vandetail--nav {
+  display: flex;
+  /* justify-content: start; */
+  width: 100%;
+  gap: 20px;
+  padding-left: 40px;
+}
+
+.host--vandetail--nav p {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16.1492px;
+  line-height: 21px;
+  color: #252525;
+}
+
+.host--vandetail--wrapper h4 {
+  align-self: flex-start;
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16.1492px;
+  line-height: 21px;
+  padding: 0px 20px;
+}
+
+.host--vansdetail--photo {
+  max-width: 100px;
+  max-height: 100px;
+  align-self: flex-start;
+  padding: 20px;
+}
+
+.host--vandetail--price {
+  align-self: flex-start;
+  padding: 0px 0px 10px 20px;
+  margin: 0px;
+}
