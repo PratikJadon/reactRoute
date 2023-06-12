@@ -5,7 +5,7 @@ export default function vanCards(prop) {
   return (
     <Link to={`/vans/${prop.id}`}>
       <div className="van--card">
-        <img className="van--card--image" src={prop.img} />
+        <img className="van--card--image" src={prop.img} alt="vancards" />
         <p className="van--card--name">{prop.name}</p>
         <p className="van--card--price">{prop.price}/day</p>
       </div>

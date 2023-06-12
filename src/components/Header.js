@@ -1,7 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
+  const styles = {
+    fontWeight: "bolder",
+    textDecoration: "underline",
+  };
   return (
     <>
       <div className="home--nav">
@@ -9,12 +13,20 @@ export default function Header() {
           <p>#VANLIFE</p>
         </Link>
         <div className="home--nav--links">
-          <Link to="/vans" className="home--nav--a">
+          <NavLink
+            style={({ isActive }) => (isActive ? styles : null)}
+            to="/vans"
+            className="home--nav--a"
+          >
             <p> Vans</p>
-          </Link>
-          <Link to="/host" className="home--nav--a">
+          </NavLink>
+          <NavLink
+            style={({ isActive }) => (isActive ? styles : null)}
+            to="/host"
+            className="home--nav--a"
+          >
             <p> Host</p>
-          </Link>
+          </NavLink>
         </div>
       </div>
     </>

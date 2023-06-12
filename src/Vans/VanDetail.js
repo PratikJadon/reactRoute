@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
 
 export default function VanDetail() {
   const params = useParams();
@@ -25,7 +24,11 @@ export default function VanDetail() {
       <div className="van--detail--container">
         {van ? (
           <div className="van--detail">
-            <img className="van--detail--image" src={van.imageUrl} />
+            <img
+              className="van--detail--image"
+              src={van.imageUrl}
+              alt="vanimg"
+            />
             <div className="van--detail--type">{van.type}</div>
             <div className="van--detail--name">{van.name}</div>
             <div className="van--detail--price">${van.price}/day</div>
