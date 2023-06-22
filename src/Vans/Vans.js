@@ -1,24 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import VanCard from "../Vans/vanCards";
-import { useSearchParams } from "react-router-dom";
+import { useLoaderData, useSearchParams } from "react-router-dom";
+import getvans from "../util";
+
+export function loader() {
+  return getvans();
+}
 
 export default function Vans() {
-  let [vans, setVans] = useState([]);
-
+  let vans = useLoaderData();
   let [filterVan, setFilterVan] = useSearchParams();
-
-  useEffect(() => {
-    const getData = async () => {
-      try {
-        fetch("/api/vans/")
-          .then((res) => res.json())
-          .then((data) => setVans(data.vans));
-      } catch (error) {
-        console.log("Something Went wrong in Fetching Data" + error);
-      }
-    };
-    getData();
-  }, []);
 
   const filteredEl = filterVan.get("type")
     ? vans.filter((van) => van.type === filterVan.get("type"))
